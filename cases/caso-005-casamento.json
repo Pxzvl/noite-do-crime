@@ -1,0 +1,225 @@
+{
+  "id": "caso-005",
+  "title": "Até Que a Morte Nos Separe",
+  "difficulty": "Médio",
+  "synopsis": "Um padrinho rico e influente é encontrado morto durante a festa de casamento que ele mesmo bancou.",
+  "estimatedMinutes": 55,
+  "victim": "Aurélio Nogueira",
+  "intro": "Aurélio Nogueira, padrinho do noivo e sócio majoritário da empresa da família, é encontrado morto na sacada do salão de festas, durante a recepção do casamento que ele mesmo financiou.",
+  "minPlayers": 5,
+  "maxPlayers": 5,
+  "timeSlots": [
+    "19:30",
+    "20:00",
+    "20:20",
+    "20:40",
+    "21:00"
+  ],
+  "characters": [
+    {
+      "id": "thiago",
+      "name": "Thiago Nogueira",
+      "role": "Noivo",
+      "objetivo": "Garantir que a festa continue e que ninguém descubra o que ele fez antes de fugir da cidade se precisar.",
+      "segredo": "Você desviou dinheiro da empresa da família para pagar dívidas de jogo. Aurélio descobriu na véspera do casamento e ameaçou expor tudo durante o brinde, arruinando a festa e o casamento.",
+      "relacoes": [
+        "Aurélio — sócio majoritário e padrinho, ameaçava expô-lo",
+        "Beatriz — noiva, não sabe de nada"
+      ],
+      "truth": {
+        "19:30": "Salão de festas (recebendo convidados)",
+        "20:00": "Sacada, discutindo com Aurélio",
+        "20:20": "Sacada (empurra Aurélio durante a discussão)",
+        "20:40": "Copa (tentando se recompor, longe de todos)",
+        "21:00": "Salão de festas (dançando com Beatriz)"
+      },
+      "isMurderer": true,
+      "motive": "Aurélio ameaçava revelar o desvio de dinheiro da empresa durante o brinde, na frente de todos os convidados.",
+      "publicAlibi": "Salão de festas",
+      "witnessClues": [
+        {
+          "about": "paula",
+          "time": "20:40",
+          "where": "Copa",
+          "text": "Vi uma mulher de vestido escuro saindo da copa muito calada, por volta das 20:40."
+        }
+      ]
+    },
+    {
+      "id": "beatriz",
+      "name": "Beatriz Lemos",
+      "role": "Noiva",
+      "objetivo": "Descobrir o que houve com Aurélio sem que o dia mais importante da sua vida vire um escândalo.",
+      "segredo": "Recebeu uma mensagem do ex-namorado, Rafael, avisando que ele estava na festa, e escondeu isso de Thiago para não criar confusão antes da cerimônia.",
+      "relacoes": [
+        "Thiago — noivo",
+        "Rafael — ex-namorado, apareceu sem ser convidado"
+      ],
+      "truth": {
+        "19:30": "Salão de festas (recebendo convidados)",
+        "20:00": "Copa, ajustando o vestido",
+        "20:20": "Salão de festas (tirando fotos)",
+        "20:40": "Salão de festas",
+        "21:00": "Salão de festas (dançando com Thiago)"
+      },
+      "publicAlibi": "Salão de festas"
+    },
+    {
+      "id": "paula",
+      "name": "Paula Nogueira",
+      "role": "Irmã do noivo e madrinha",
+      "objetivo": "Proteger o irmão, custe o que custar — mesmo sem saber ainda do que ele é capaz.",
+      "segredo": "Sabia do desvio de dinheiro havia semanas e ajudou Thiago a esconder os registros contábeis da auditoria interna da empresa.",
+      "relacoes": [
+        "Thiago — irmão, sabia do desvio antes de todo mundo",
+        "Aurélio — sócio da família, sempre desconfiou dela"
+      ],
+      "truth": {
+        "19:30": "Salão de festas",
+        "20:00": "Salão de festas (organizando os brindes)",
+        "20:20": "Copa",
+        "20:40": "Copa",
+        "21:00": "Salão de festas"
+      },
+      "publicAlibi": "Salão de festas"
+    },
+    {
+      "id": "rafael",
+      "name": "Rafael Sanches",
+      "role": "Ex-namorado da noiva",
+      "objetivo": "Falar com Beatriz a sós antes que ela se arrependa depois do casamento.",
+      "segredo": "Entrou na festa sem ser convidado, escondido atrás do jardim, esperando uma chance de falar com Beatriz sozinha.",
+      "relacoes": [
+        "Beatriz — ex-namorada",
+        "Aurélio — nunca se conheceram"
+      ],
+      "truth": {
+        "19:30": "Jardim, escondido",
+        "20:00": "Jardim, escondido",
+        "20:20": "Jardim, escondido",
+        "20:40": "Estacionamento, indo embora ao perceber que não teria chance",
+        "21:00": "Estacionamento (indo embora)"
+      },
+      "publicAlibi": "Jardim"
+    },
+    {
+      "id": "cris",
+      "name": "Cris Andrade",
+      "role": "Cerimonialista do evento",
+      "objetivo": "Garantir que a festa termine sem mais nenhum imprevisto, e que ninguém culpe a organização.",
+      "segredo": "Viu Thiago saindo da sacada sozinho, visivelmente nervoso, por volta das 20:20, mas não contou nada na hora para não atrapalhar o cronograma da festa.",
+      "relacoes": [
+        "Thiago e Beatriz — contratantes do evento",
+        "Aurélio — quem fechou o contrato e pagou o sinal"
+      ],
+      "truth": {
+        "19:30": "Salão de festas (coordenando o buffet)",
+        "20:00": "Salão de festas",
+        "20:20": "Sacada (nas proximidades, quando vê Thiago saindo nervoso)",
+        "20:40": "Salão de festas",
+        "21:00": "Salão de festas"
+      },
+      "witnessClue": {
+        "about": "thiago",
+        "time": "20:20",
+        "where": "Sacada",
+        "text": "Vi um homem de smoking saindo da sacada sozinho, muito nervoso, por volta das 20:20."
+      },
+      "publicAlibi": "Salão de festas"
+    }
+  ],
+  "timelinePublicSeed": [
+    {
+      "time": "19:30",
+      "text": "Início da recepção do casamento."
+    },
+    {
+      "time": "21:00",
+      "text": "O corpo de Aurélio é encontrado na sacada por um garçom."
+    }
+  ],
+  "locations": [
+    {
+      "id": "sacada",
+      "name": "Sacada",
+      "evidence": [
+        {
+          "tag": "Física",
+          "text": "A grade da sacada está com um arranhão recente, na altura de um empurrão."
+        },
+        {
+          "tag": "Física",
+          "text": "Uma taça quebrada no chão, com a mesma bebida que Aurélio segurava mais cedo."
+        }
+      ]
+    },
+    {
+      "id": "jardim",
+      "name": "Jardim",
+      "evidence": [
+        {
+          "tag": "Testemunhal",
+          "text": "Um jardineiro comenta ter visto um homem não identificado escondido perto das roseiras a noite toda."
+        }
+      ]
+    },
+    {
+      "id": "copa",
+      "name": "Copa",
+      "evidence": [
+        {
+          "tag": "Documental",
+          "text": "Uma pasta com relatórios financeiros da empresa da família, escondida atrás de caixas de talheres."
+        }
+      ]
+    },
+    {
+      "id": "estacionamento",
+      "name": "Estacionamento",
+      "evidence": [
+        {
+          "tag": "Testemunhal",
+          "text": "O manobrista lembra de um convidado saindo a pé, sem carro, logo depois das 20:40."
+        }
+      ]
+    },
+    {
+      "id": "salao-festas",
+      "name": "Salão de festas",
+      "evidence": [
+        {
+          "tag": "Testemunhal",
+          "text": "O mestre de cerimônias confirma que o brinde de Aurélio nunca chegou a acontecer."
+        }
+      ]
+    }
+  ],
+  "totalActions": 8,
+  "hints": [
+    {
+      "id": 1,
+      "unlockAfterActions": 0,
+      "text": "Comecem pela Sacada — foi lá que o corpo foi encontrado."
+    },
+    {
+      "id": 2,
+      "unlockAfterLocation": "copa",
+      "text": "Aqueles relatórios financeiros escondidos podem explicar tudo."
+    },
+    {
+      "id": 3,
+      "unlockOnContradiction": true,
+      "text": "Uma contradição foi registrada. Perguntem à testemunha exatamente o que ela viu, e onde."
+    },
+    {
+      "id": 4,
+      "unlockAfterLocation": "jardim",
+      "text": "Quem é o convidado escondido no jardim? Ele pode não ter nada a ver com o crime."
+    }
+  ],
+  "whatFooledYou": [
+    "Rafael parecia suspeito escondido no jardim, mas só queria falar com Beatriz.",
+    "Paula escondia algo sério, mas o crime não foi dela — foi cumplicidade depois do fato.",
+    "Cris ficou calada por profissionalismo, não por estar envolvida."
+  ]
+}

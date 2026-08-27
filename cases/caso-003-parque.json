@@ -1,0 +1,227 @@
+{
+  "id": "caso-003",
+  "title": "Sumiço no Parque",
+  "difficulty": "Médio",
+  "synopsis": "Uma criança desaparece durante uma festa no parque. A polícia já foi acionada — mas a resposta está mais perto do que parece.",
+  "estimatedMinutes": 50,
+  "victim": "Enzo Bittencourt (5 anos)",
+  "intro": "Durante a festa de aniversário no Parque das Amoreiras, Enzo, de 5 anos, desaparece em poucos minutos, em meio à confusão dos infláveis e da barraca de lanches. Ele está bem — mas ninguém além de uma pessoa sabe disso, e ela não está contando a verdade.",
+  "minPlayers": 5,
+  "maxPlayers": 5,
+  "timeSlots": [
+    "16:00",
+    "16:15",
+    "16:25",
+    "16:30",
+    "16:40"
+  ],
+  "characters": [
+    {
+      "id": "ricardo",
+      "name": "Ricardo Bittencourt",
+      "role": "Pai de Enzo (sem a guarda)",
+      "objetivo": "Ajudar a 'encontrar' Enzo o mais rápido possível, sem levantar suspeita.",
+      "segredo": "Você levou Enzo embora ao final da visita combinada. Ele está seguro, num hotel a poucos quarteirões, e você planejava devolvê-lo antes do amanhecer — mas está apavorado com a repercussão de ter agido assim.",
+      "relacoes": [
+        "Camila — ex-esposa, tem a guarda legal de Enzo",
+        "Dona Marlene — sua mãe, emprestou o carro sem saber o motivo real"
+      ],
+      "truth": {
+        "16:00": "Estacionamento, observando a festa de longe",
+        "16:15": "Parquinho, se aproximando de Enzo aos poucos",
+        "16:25": "Parquinho, conversando com Enzo",
+        "16:30": "Saída lateral, levando Enzo pela mão",
+        "16:40": "Saída lateral (a caminho do hotel com Enzo)"
+      },
+      "isMurderer": true,
+      "motive": "Recebeu a notícia de que Camila levaria Enzo para morar fora do país em duas semanas, e entrou em pânico ao pensar que não teria mais contato com o filho.",
+      "publicAlibi": "Estacionamento"
+    },
+    {
+      "id": "camila",
+      "name": "Camila Bittencourt",
+      "role": "Mãe de Enzo",
+      "objetivo": "Encontrar o filho o quanto antes — e entender quem sabia da mudança para o exterior.",
+      "segredo": "Ainda não tinha contado oficialmente a Ricardo sobre a mudança para fora do país; ele descobriu por conta própria, por acaso, dias atrás.",
+      "relacoes": [
+        "Ricardo — ex-marido, perdeu a guarda no ano passado",
+        "Fernanda — contratada para cuidar das crianças durante a festa"
+      ],
+      "truth": {
+        "16:00": "Área dos infláveis (recebendo convidados)",
+        "16:15": "Área dos infláveis, com outros pais",
+        "16:25": "Barraca de lanches",
+        "16:30": "Área dos infláveis, procurando Enzo",
+        "16:40": "Área dos infláveis (percebe o sumiço e dá o alarme)"
+      },
+      "publicAlibi": "Área dos infláveis"
+    },
+    {
+      "id": "fernanda",
+      "name": "Fernanda Reis",
+      "role": "Monitora contratada para o evento",
+      "objetivo": "Provar que cuidou bem das crianças e não perder outros contratos por causa disso.",
+      "segredo": "Passou boa parte da tarde trocando mensagens com o namorado na barraca de lanches. Chegou a ver Enzo de longe caminhando de mãos dadas com um homem, mas achou que fosse familiar e não deu importância — só depois entendeu o que tinha visto.",
+      "relacoes": [
+        "Camila — quem a contratou para o evento",
+        "Enzo — estava sob sua responsabilidade direta"
+      ],
+      "truth": {
+        "16:00": "Parquinho, com as crianças",
+        "16:15": "Barraca de lanches, no celular",
+        "16:25": "Barraca de lanches, no celular",
+        "16:30": "Barraca de lanches, no celular",
+        "16:40": "Parquinho, procurando Enzo desesperada"
+      },
+      "publicAlibi": "Barraca de lanches",
+      "witnessClues": [
+        {
+          "about": "camila",
+          "time": "16:25",
+          "where": "Barraca de lanches",
+          "text": "Vi Camila passar rapidinho pela barraca de lanches, por volta das 16:25."
+        }
+      ]
+    },
+    {
+      "id": "marlene",
+      "name": "Dona Marlene",
+      "role": "Avó paterna de Enzo",
+      "objetivo": "Proteger o filho, Ricardo, sem entender ainda o tamanho do problema que ele criou.",
+      "segredo": "Emprestou o carro a Ricardo mais cedo naquela tarde, sem perguntar por quê, e mentiu dizendo que não o via desde o almoço.",
+      "relacoes": [
+        "Ricardo — filho",
+        "Enzo — neto"
+      ],
+      "truth": {
+        "16:00": "Área dos infláveis, conversando com outros convidados",
+        "16:15": "Estacionamento, entregando as chaves do carro a Ricardo",
+        "16:25": "Área dos infláveis",
+        "16:30": "Área dos infláveis",
+        "16:40": "Área dos infláveis, sem saber de nada"
+      },
+      "publicAlibi": "Área dos infláveis"
+    },
+    {
+      "id": "yuri",
+      "name": "Yuri Santos",
+      "role": "Segurança contratado para o evento",
+      "objetivo": "Não ser responsabilizado por ter deixado alguém sair pela saída lateral sem verificar.",
+      "segredo": "Recebeu um dinheiro de Ricardo mais cedo para 'não se meter' caso ele precisasse sair mais cedo com o próprio filho, e por isso não deu queixa quando os viu saindo juntos.",
+      "relacoes": [
+        "Ricardo — pagou para que ele não interferisse",
+        "Camila — não sabe que ela desconhece o combinado"
+      ],
+      "truth": {
+        "16:00": "Saída lateral (no início do turno)",
+        "16:15": "Saída lateral",
+        "16:25": "Saída lateral",
+        "16:30": "Saída lateral, vê Ricardo saindo com Enzo",
+        "16:40": "Saída lateral"
+      },
+      "witnessClue": {
+        "about": "ricardo",
+        "time": "16:30",
+        "where": "Saída lateral",
+        "text": "Vi um homem parecido com o pai da criança saindo pela lateral com uma criança pela mão, por volta das 16:30."
+      },
+      "publicAlibi": "Saída lateral"
+    }
+  ],
+  "timelinePublicSeed": [
+    {
+      "time": "16:00",
+      "text": "A festa de aniversário de Enzo começa no Parque das Amoreiras."
+    },
+    {
+      "time": "16:40",
+      "text": "Camila percebe que Enzo sumiu e dá o alarme."
+    }
+  ],
+  "locations": [
+    {
+      "id": "parquinho",
+      "name": "Parquinho",
+      "evidence": [
+        {
+          "tag": "Física",
+          "text": "Um tênis pequeno, do tamanho de Enzo, caído perto do escorregador."
+        }
+      ]
+    },
+    {
+      "id": "estacionamento",
+      "name": "Estacionamento",
+      "evidence": [
+        {
+          "tag": "Testemunhal",
+          "text": "Um manobrista lembra de ter visto o carro de Ricardo saindo em disparada por volta das 16:32."
+        }
+      ]
+    },
+    {
+      "id": "saida-lateral",
+      "name": "Saída lateral",
+      "evidence": [
+        {
+          "tag": "Testemunhal",
+          "text": "Um funcionário da limpeza comenta ter visto Yuri conversando de forma estranhamente calma com um homem que carregava uma criança no colo."
+        }
+      ]
+    },
+    {
+      "id": "barraca-lanches",
+      "name": "Barraca de lanches",
+      "evidence": [
+        {
+          "tag": "Digital",
+          "text": "O celular de Fernanda mostra uma sequência longa de mensagens trocadas entre 16:15 e 16:35."
+        }
+      ]
+    },
+    {
+      "id": "area-inflaveis",
+      "name": "Área dos infláveis",
+      "evidence": [
+        {
+          "tag": "Testemunhal",
+          "text": "Outro convidado lembra de ter visto Dona Marlene entregando as chaves do carro para alguém, mas não viu para quem."
+        }
+      ]
+    }
+  ],
+  "totalActions": 7,
+  "hints": [
+    {
+      "id": 1,
+      "unlockAfterActions": 0,
+      "text": "Comecem pelo Parquinho — foi o último lugar em que Enzo foi visto brincando."
+    },
+    {
+      "id": 2,
+      "unlockAfterLocation": "saida-lateral",
+      "text": "Alguém no portão lateral pode ter visto mais do que contou."
+    },
+    {
+      "id": 3,
+      "unlockAfterLocation": "estacionamento",
+      "text": "Um carro saindo em disparada logo depois do sumiço não é coincidência."
+    },
+    {
+      "id": 4,
+      "unlockOnContradiction": true,
+      "text": "Uma contradição foi registrada. Perguntem à testemunha exatamente o que ela viu, e onde."
+    },
+    {
+      "id": 5,
+      "unlockAfterActions": 5,
+      "text": "Nem todo segredo é sobre o sumiço — mas todo mundo aqui está escondendo alguma coisa."
+    }
+  ],
+  "whatFooledYou": [
+    "Fernanda mentiu com medo de perder o contrato, não porque soubesse de algo grave.",
+    "Dona Marlene não fazia ideia do que o próprio filho estava prestes a fazer.",
+    "Yuri aceitou dinheiro para ficar calado, mas nunca imaginou que viraria uma investigação de sumiço.",
+    "Enzo estava seguro o tempo todo — o maior medo de Ricardo era perder contato com o filho, não machucá-lo."
+  ]
+}

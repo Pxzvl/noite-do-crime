@@ -1,0 +1,260 @@
+{
+  "id": "caso-010",
+  "title": "Colheita Amarga",
+  "difficulty": "Difícil",
+  "synopsis": "O patriarca de uma vinícola tradicional é encontrado morto durante a festa anual da colheita, cercado pela própria família.",
+  "estimatedMinutes": 65,
+  "victim": "Benedito Amaral",
+  "intro": "Benedito Amaral, fundador e patriarca da Vinícola Amaral, é encontrado morto na adega durante a festa anual da colheita, com a família e convidados ainda circulando pela propriedade.",
+  "minPlayers": 6,
+  "maxPlayers": 6,
+  "timeSlots": [
+    "18:30",
+    "19:00",
+    "19:20",
+    "19:40",
+    "20:00"
+  ],
+  "characters": [
+    {
+      "id": "rodrigo",
+      "name": "Rodrigo Amaral",
+      "role": "Filho mais velho, gerente da vinícola",
+      "objetivo": "Garantir que a festa da colheita termine bem e que a administração da vinícola continue nas suas mãos.",
+      "segredo": "Vinha desviando recursos da vinícola havia mais de um ano para pagar dívidas de jogo. Benedito descobriu naquela manhã e avisou que o afastaria da gestão ainda durante a festa.",
+      "relacoes": [
+        "Benedito — pai, ameaçava afastá-lo da gestão",
+        "Caetano — só ele sabia da real situação financeira da vinícola"
+      ],
+      "truth": {
+        "18:30": "Terraço, recebendo os convidados",
+        "19:00": "Adega, discutindo com Benedito",
+        "19:20": "Adega, sozinho com Benedito",
+        "19:40": "Escritório, se recompondo",
+        "20:00": "Terraço, junto aos outros convidados"
+      },
+      "isMurderer": true,
+      "motive": "Benedito descobriu o desvio de recursos da vinícola e ameaçou afastá-lo da gestão ainda durante a festa.",
+      "publicAlibi": "Terraço"
+    },
+    {
+      "id": "beatriz",
+      "name": "Beatriz Amaral",
+      "role": "Filha, enóloga da vinícola",
+      "objetivo": "Provar que é capaz de assumir a vinícola, com ou sem a bênção do pai.",
+      "segredo": "Discordava abertamente do irmão sobre os rumos da vinícola e vinha planejando, em segredo, propor ao pai que a colocasse no comando no lugar dele.",
+      "relacoes": [
+        "Rodrigo — irmão, rival pela sucessão",
+        "Benedito — pai, a quem pretendia convencer a mudar de sucessor"
+      ],
+      "truth": {
+        "18:30": "Vinhedo, com os convidados",
+        "19:00": "Vinhedo",
+        "19:20": "Terraço",
+        "19:40": "Terraço",
+        "20:00": "Terraço"
+      },
+      "publicAlibi": "Terraço"
+    },
+    {
+      "id": "norberto",
+      "name": "Norberto Salgado",
+      "role": "Representante de uma multinacional interessada na compra",
+      "objetivo": "Fechar a compra da vinícola antes que outro grupo se interesse.",
+      "segredo": "Você estava no escritório revisando o contrato de compra quando ouviu um barulho na adega. Quando foi ver, encontrou Benedito caído e Rodrigo saindo. Apavorado com as consequências pra venda, você arrumou alguns objetos e limpou o chão — achando que removia só a evidência da discussão, sem imaginar que estava destruindo algo importante.",
+      "relacoes": [
+        "Benedito — negociava a venda diretamente com ele",
+        "Rodrigo e Beatriz — não sabiam da proposta"
+      ],
+      "truth": {
+        "18:30": "Terraço",
+        "19:00": "Escritório, revisando documentos",
+        "19:20": "Escritório",
+        "19:40": "Terraço",
+        "20:00": "Terraço"
+      },
+      "publicAlibi": "Terraço"
+    },
+    {
+      "id": "iolanda",
+      "name": "Iolanda Amaral",
+      "role": "Esposa de Benedito",
+      "objetivo": "Garantir a própria posição na família após a morte do marido.",
+      "segredo": "Assinou, meses atrás, um acordo pré-nupcial desfavorável, e vinha pressionando Benedito para revisá-lo antes de qualquer decisão sobre a venda da vinícola.",
+      "relacoes": [
+        "Benedito — marido",
+        "Norberto — sabia da proposta de venda antes dos filhos"
+      ],
+      "truth": {
+        "18:30": "Cozinha, organizando o jantar",
+        "19:00": "Cozinha",
+        "19:20": "Cozinha",
+        "19:40": "Cozinha",
+        "20:00": "Terraço"
+      },
+      "publicAlibi": "Cozinha"
+    },
+    {
+      "id": "caetano",
+      "name": "Caetano Vieira",
+      "role": "Capataz e vinicultor-chefe",
+      "objetivo": "Proteger o próprio emprego, depois de décadas trabalhando para a família.",
+      "segredo": "Sabia havia meses do desvio de recursos feito por Rodrigo, mas ficou calado por lealdade à família e medo de perder o cargo.",
+      "relacoes": [
+        "Rodrigo — sabia do desvio, mas nunca contou nada",
+        "Benedito — trabalhava para ele havia mais de 20 anos"
+      ],
+      "truth": {
+        "18:30": "Vinhedo",
+        "19:00": "Vinhedo",
+        "19:20": "Adega, verificando os barris",
+        "19:40": "Adega, quando vê Rodrigo saindo sozinho",
+        "20:00": "Vinhedo"
+      },
+      "publicAlibi": "Vinhedo",
+      "witnessClues": [
+        {
+          "about": "rodrigo",
+          "time": "19:40",
+          "where": "Escritório",
+          "text": "Vi alguém saindo da adega em direção ao escritório sozinho, muito nervoso, por volta das 19:40."
+        },
+        {
+          "about": "beatriz",
+          "time": "18:30",
+          "where": "Vinhedo",
+          "text": "Vi alguém no vinhedo, conversando bastante com os trabalhadores, mais cedo na festa."
+        }
+      ]
+    },
+    {
+      "id": "diana",
+      "name": "Diana Ferraz",
+      "role": "Jornalista de gastronomia, convidada",
+      "objetivo": "Conseguir uma matéria exclusiva sobre a vinícola mais tradicional da região.",
+      "segredo": "Ouviu, por acaso, parte de uma discussão entre Benedito e Rodrigo mais cedo, mas não entendeu o contexto e achou melhor não se meter.",
+      "relacoes": [
+        "Benedito — concedeu a ela uma entrevista mais cedo naquele dia",
+        "Rodrigo — cruzou com ele saindo da adega, tenso"
+      ],
+      "truth": {
+        "18:30": "Terraço, entrevistando Benedito",
+        "19:00": "Terraço",
+        "19:20": "Vinhedo, fotografando",
+        "19:40": "Terraço, avista Rodrigo saindo tenso da adega",
+        "20:00": "Terraço"
+      },
+      "witnessClue": {
+        "about": "rodrigo",
+        "time": "19:20",
+        "where": "Adega",
+        "text": "Ouvi vozes alteradas vindas da adega por volta das 19:20."
+      },
+      "publicAlibi": "Terraço"
+    }
+  ],
+  "timelinePublicSeed": [
+    {
+      "time": "18:30",
+      "text": "Início da festa anual da colheita na Vinícola Amaral."
+    },
+    {
+      "time": "20:00",
+      "text": "O corpo de Benedito é encontrado na adega por um dos convidados."
+    }
+  ],
+  "locations": [
+    {
+      "id": "adega",
+      "name": "Adega",
+      "evidence": [
+        {
+          "tag": "Física",
+          "text": "Um barril tombado e vinho derramado no chão, perto de onde o corpo foi encontrado."
+        },
+        {
+          "tag": "Testemunhal",
+          "text": "Um funcionário da adega comenta ter ouvido vozes alteradas por volta das 19:20."
+        }
+      ]
+    },
+    {
+      "id": "escritorio",
+      "name": "Escritório",
+      "evidence": [
+        {
+          "tag": "Documental",
+          "text": "Uma proposta de compra da vinícola, já assinada por Benedito, escondida numa pasta lacrada."
+        },
+        {
+          "tag": "Documental",
+          "text": "Extratos bancários mostrando transferências irregulares da conta da vinícola nos últimos meses."
+        }
+      ]
+    },
+    {
+      "id": "vinhedo",
+      "name": "Vinhedo",
+      "evidence": [
+        {
+          "tag": "Testemunhal",
+          "text": "Trabalhadores da colheita confirmam que Beatriz e Caetano passaram boa parte da noite por ali."
+        }
+      ]
+    },
+    {
+      "id": "cozinha",
+      "name": "Cozinha",
+      "evidence": [
+        {
+          "tag": "Testemunhal",
+          "text": "A equipe de cozinha confirma que Iolanda ficou por ali quase toda a noite, supervisionando o jantar."
+        }
+      ]
+    },
+    {
+      "id": "terraço",
+      "name": "Terraço",
+      "evidence": [
+        {
+          "tag": "Digital",
+          "text": "Fotos de Diana mostram Rodrigo tenso, sozinho, num canto do terraço por volta das 19:40."
+        }
+      ]
+    }
+  ],
+  "totalActions": 11,
+  "hints": [
+    {
+      "id": 1,
+      "unlockAfterActions": 0,
+      "text": "Comecem pela Adega — foi lá que o corpo foi encontrado."
+    },
+    {
+      "id": 2,
+      "unlockAfterLocation": "escritorio",
+      "text": "Aqueles extratos bancários irregulares podem apontar um motivo direto."
+    },
+    {
+      "id": 3,
+      "unlockOnContradiction": true,
+      "text": "Uma contradição foi registrada. Perguntem à testemunha exatamente o que ela viu, e onde."
+    },
+    {
+      "id": 4,
+      "unlockAfterLocation": "adega",
+      "text": "Vozes alteradas foram ouvidas na adega por volta das 19:20. De quem eram?"
+    },
+    {
+      "id": 5,
+      "unlockAfterActions": 8,
+      "text": "A proposta de venda da vinícola pode explicar tensões na família — mas nem toda tensão é motivo para matar."
+    }
+  ],
+  "whatFooledYou": [
+    "Norberto limpou a adega achando que protegia a venda — mas eliminou rastros do crime sem saber o que estava apagando.",
+    "Iolanda negociava o pré-nupcial há meses, e o estresse acumulado fez seu comportamento parecer culpado quando era só desespero financeiro.",
+    "Beatriz planejava tomar o controle da vinícola pelo lado certo — não percebeu que o irmão estava se afundando ao lado dela.",
+    "Caetano sabia do desvio e ficou calado por lealdade — mas nunca imaginou que Rodrigo fosse capaz de mais do que isso."
+  ]
+}

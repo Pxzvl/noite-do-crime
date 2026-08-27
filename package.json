@@ -1,0 +1,12 @@
+{
+  "name": "dossie-criminal",
+  "version": "1.0.0",
+  "description": "Jogo de investigação social multiplayer, sem dependências externas",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "id": "caso-007",
+  "title": "Prova Final",
+  "difficulty": "Médio",
+  "synopsis": "O diretor de um colégio é encontrado morto na própria sala durante a feira de ciências anual.",
+  "estimatedMinutes": 50,
+  "victim": "Professor Aguiar",
+  "intro": "O diretor Aguiar é encontrado morto na sala da direção, durante a feira de ciências anual do colégio. O prédio estava cheio de alunos, pais e professores — e um deles não queria que a reunião marcada para o dia seguinte acontecesse.",
+  "minPlayers": 5,
+  "maxPlayers": 5,
+  "timeSlots": [
+    "19:00",
+    "19:20",
+    "19:40",
+    "20:00",
+    "20:15"
+  ],
+  "characters": [
+    {
+      "id": "marta",
+      "name": "Marta Coutinho",
+      "role": "Coordenadora pedagógica",
+      "objetivo": "Garantir que a feira de ciências termine bem, e que ninguém desconfie dela.",
+      "segredo": "Você é a assassina — mas o motivo vai fundo. Há dois anos, Aguiar assumiu falsas acusações suas junto à direção e tomou a vaga de coordenação que era sua por direito. Agora descobriu o desvio de verba que você faz desde que ficou de fora do cargo, e agendou uma reunião para o dia seguinte para te demitir. Você veio falar com ele uma última vez — e ele te chamou de incompetente de novo.",
+      "relacoes": [
+        "Aguiar — diretor, ameaçava expô-la e demiti-la",
+        "Zelador Aparício — só ele sabia que ela ficou no prédio até mais tarde"
+      ],
+      "truth": {
+        "19:00": "Pátio, recebendo os pais",
+        "19:20": "Sala da direção, discutindo com Aguiar",
+        "19:40": "Sala da direção, sozinha com Aguiar",
+        "20:00": "Secretaria, se recompondo",
+        "20:15": "Pátio, junto aos outros professores"
+      },
+      "isMurderer": true,
+      "motive": "Aguiar bloqueou sua promoção com falsas acusações e estava prestes a te demitir. A discussão de anos foi longe demais.",
+      "publicAlibi": "Pátio"
+    },
+    {
+      "id": "renata",
+      "name": "Renata Silveira",
+      "role": "Professora de ciências",
+      "objetivo": "Fazer da feira de ciências um sucesso — e garantir a própria promoção a coordenadora.",
+      "segredo": "Sabia que concorria à vaga de Marta como coordenadora, e vinha guardando provas dos desvios da merenda, esperando o momento certo de usá-las.",
+      "relacoes": [
+        "Marta — rival direta pela coordenação",
+        "Aguiar — se reportava a ele semanalmente"
+      ],
+      "truth": {
+        "19:00": "Laboratório, com os alunos",
+        "19:20": "Laboratório, com os alunos",
+        "19:40": "Pátio, avaliando os projetos",
+        "20:00": "Pátio",
+        "20:15": "Pátio"
+      },
+      "publicAlibi": "Pátio"
+    },
+    {
+      "id": "aparicio",
+      "name": "Aparício Rocha",
+      "role": "Zelador do colégio",
+      "objetivo": "Terminar o próprio turno sem se envolver em mais confusão do que o necessário.",
+      "segredo": "Viu Marta saindo da sala da direção sozinha, com pressa, por volta das 20:00, mas não contou nada por medo de perder o emprego.",
+      "relacoes": [
+        "Aguiar — seu chefe direto",
+        "Marta — sempre foi gentil com ele"
+      ],
+      "truth": {
+        "19:00": "Corredor perto da sala da direção",
+        "19:20": "Pátio, ajeitando as mesas",
+        "19:40": "Corredor perto da sala da direção",
+        "20:00": "Corredor perto da sala da direção (quando vê Marta em direção à secretaria)",
+        "20:15": "Corredor perto da sala da direção"
+      },
+      "witnessClue": {
+        "about": "marta",
+        "time": "20:00",
+        "where": "Secretaria",
+        "text": "Vi alguém saindo apressada em direção à secretaria, por volta das 20:00, parecia muito nervosa."
+      },
+      "publicAlibi": "Corredor perto da sala da direção"
+    },
+    {
+      "id": "julia",
+      "name": "Júlia Ramos",
+      "role": "Aluna do último ano",
+      "objetivo": "Convencer o diretor a reconsiderar sua situação escolar antes de ser expulsa.",
+      "segredo": "Você tinha uma reunião marcada com Aguiar sobre a expulsão — e quando chegou perto da sala, ouviu ele discutindo aos gritos com alguém. Apavorada, você abriu a porta rápido, viu uma mulher de costas curvada sobre algo e fugiu sem entender o que tinha visto. Você acha que viu um crime. Mas você não vai contar pra ninguém, porque não quer se meter.",
+      "relacoes": [
+        "Aguiar — decidiria sobre sua permanência na escola",
+        "Renata — sua professora favorita"
+      ],
+      "truth": {
+        "19:00": "Laboratório, no projeto de ciências",
+        "19:20": "Corredor perto da sala da direção, hesitando",
+        "19:40": "Pátio, desistindo de falar com Aguiar",
+        "20:00": "Pátio",
+        "20:15": "Pátio"
+      },
+      "publicAlibi": "Pátio"
+    },
+    {
+      "id": "carla",
+      "name": "Carla Bezerra",
+      "role": "Mãe de aluno",
+      "objetivo": "Reverter a reprovação do filho antes do fim do ano letivo.",
+      "segredo": "Teve uma discussão alterada com Aguiar mais cedo naquela semana sobre a reprovação do filho, e ainda guardava mensagens de ameaça que se arrependeu de ter mandado.",
+      "relacoes": [
+        "Aguiar — decidiu manter a reprovação do filho dela",
+        "Renata — professora do filho"
+      ],
+      "truth": {
+        "19:00": "Pátio",
+        "19:20": "Pátio, conversando com outros pais",
+        "19:40": "Pátio",
+        "20:00": "Pátio",
+        "20:15": "Pátio, indo embora"
+      },
+      "publicAlibi": "Pátio",
+      "witnessClues": [
+        {
+          "about": "aparicio",
+          "time": "19:20",
+          "where": "Pátio",
+          "text": "Vi um homem de uniforme azul dando uma volta pelo pátio, por volta das 19:20."
+        }
+      ]
+    }
+  ],
+  "timelinePublicSeed": [
+    {
+      "time": "19:00",
+      "text": "Início da feira de ciências anual do colégio."
+    },
+    {
+      "time": "20:15",
+      "text": "O corpo de Aguiar é encontrado por um professor, ao passar pela sala da direção."
+    }
+  ],
+  "locations": [
+    {
+      "id": "sala-direcao",
+      "name": "Sala da direção",
+      "evidence": [
+        {
+          "tag": "Física",
+          "text": "Uma cadeira derrubada e papéis espalhados pelo chão."
+        },
+        {
+          "tag": "Documental",
+          "text": "Uma pauta de reunião, marcada para o dia seguinte, com o nome de Marta destacado."
+        }
+      ]
+    },
+    {
+      "id": "secretaria",
+      "name": "Secretaria",
+      "evidence": [
+        {
+          "tag": "Documental",
+          "text": "Recibos de compras da merenda com valores que não batem com o relatório oficial do mês."
+        }
+      ]
+    },
+    {
+      "id": "corredor-direcao",
+      "name": "Corredor perto da sala da direção",
+      "evidence": [
+        {
+          "tag": "Testemunhal",
+          "text": "Um professor lembra de ter visto alguém saindo apressado da sala da direção por volta das 20:00."
+        }
+      ]
+    },
+    {
+      "id": "laboratorio",
+      "name": "Laboratório",
+      "evidence": [
+        {
+          "tag": "Testemunhal",
+          "text": "Alunos confirmam que Renata não saiu de perto deles durante quase toda a feira."
+        }
+      ]
+    },
+    {
+      "id": "patio",
+      "name": "Pátio",
+      "evidence": [
+        {
+          "tag": "Testemunhal",
+          "text": "Vários pais confirmam ter visto Carla alterada mais cedo na semana, mas ninguém a viu perto da sala da direção hoje."
+        }
+      ]
+    }
+  ],
+  "totalActions": 8,
+  "hints": [
+    {
+      "id": 1,
+      "unlockAfterActions": 0,
+      "text": "Comecem pela Sala da direção — foi lá que o corpo foi encontrado."
+    },
+    {
+      "id": 2,
+      "unlockAfterLocation": "secretaria",
+      "text": "Aqueles recibos de merenda que não batem podem ser o motivo real."
+    },
+    {
+      "id": 3,
+      "unlockOnContradiction": true,
+      "text": "Uma contradição foi registrada. Perguntem à testemunha exatamente o que ela viu, e onde."
+    },
+    {
+      "id": 4,
+      "unlockAfterLocation": "corredor-direcao",
+      "text": "Alguém saiu apressado da sala da direção. Quem tinha motivo para isso?"
+    }
+  ],
+  "whatFooledYou": [
+    "Júlia viu algo, mas fugiu com tanto medo da própria situação de expulsão que nunca contou a ninguém.",
+    "Carla tinha ameaças de mensagem no celular — antigas, enviadas num momento de raiva — mas nunca agiu.",
+    "Renata guardava provas contra Marta por ambição profissional, mas foi ela quem primeiro ajudou a investigação chegar onde chegou."
+  ]
+}

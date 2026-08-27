@@ -1,0 +1,190 @@
+{
+  "id": "caso-008",
+  "title": "Manchete Fatal",
+  "difficulty": "Fácil",
+  "synopsis": "O editor-chefe de um jornal é encontrado morto na própria sala, durante o fechamento da edição da madrugada.",
+  "estimatedMinutes": 35,
+  "victim": "Ivan Souza",
+  "intro": "Ivan Souza, editor-chefe do jornal, é encontrado morto na própria sala pouco antes da meia-noite, durante o fechamento da edição do dia seguinte. Só quatro pessoas ainda estavam na redação naquele horário.",
+  "minPlayers": 4,
+  "maxPlayers": 4,
+  "timeSlots": [
+    "22:00",
+    "22:15",
+    "22:30",
+    "22:45",
+    "23:00"
+  ],
+  "characters": [
+    {
+      "id": "nelson",
+      "name": "Nelson Prado",
+      "role": "Colunista veterano",
+      "objetivo": "Fechar a própria coluna a tempo e evitar qualquer atraso que chame atenção para si.",
+      "segredo": "Ivan descobriu que sua última coluna tinha trechos plagiados de outro veículo e avisou, mais cedo naquela noite, que ia demiti-lo e publicar uma retratação com o seu nome.",
+      "relacoes": [
+        "Ivan — editor-chefe, ameaçava demiti-lo publicamente",
+        "Sofia — sabia da alteração no plano de publicação"
+      ],
+      "truth": {
+        "22:00": "Redação, na própria mesa",
+        "22:15": "Sala do editor, discutindo com Ivan",
+        "22:30": "Sala do editor, sozinho com Ivan",
+        "22:45": "Copa, se recompondo",
+        "23:00": "Redação"
+      },
+      "isMurderer": true,
+      "motive": "Ivan descobriu o plágio na coluna e ameaçou demiti-lo e publicar uma retratação com o nome dele estampado.",
+      "publicAlibi": "Redação"
+    },
+    {
+      "id": "sofia",
+      "name": "Sofia Martins",
+      "role": "Repórter júnior",
+      "objetivo": "Conseguir a própria matéria publicada antes do fechamento.",
+      "segredo": "Ouviu Ivan ao telefone dizendo que ia 'acabar com a carreira de alguém' mais cedo naquela noite, mas não contou a ninguém por achar que não era da sua conta.",
+      "relacoes": [
+        "Ivan — editor, decidia sobre a publicação da sua matéria",
+        "Nelson — colega mais experiente, sempre a ajudou"
+      ],
+      "truth": {
+        "22:00": "Redação, na própria mesa",
+        "22:15": "Redação",
+        "22:30": "Copa, tomando café",
+        "22:45": "Redação",
+        "23:00": "Redação"
+      },
+      "publicAlibi": "Redação"
+    },
+    {
+      "id": "estagiaria",
+      "name": "Bia Costa",
+      "role": "Estagiária",
+      "objetivo": "Terminar a própria tarefa da noite sem errar nada na frente dos mais experientes.",
+      "segredo": "Estava escondida na copa boa parte da noite, evitando uma tarefa chata que Ivan tinha dado a ela mais cedo.",
+      "relacoes": [
+        "Ivan — supervisor direto",
+        "Sofia — quem mais a orienta na redação"
+      ],
+      "truth": {
+        "22:00": "Copa",
+        "22:15": "Copa",
+        "22:30": "Copa",
+        "22:45": "Copa, ouve um barulho vindo da sala do editor",
+        "23:00": "Redação"
+      },
+      "publicAlibi": "Copa",
+      "witnessClues": [
+        {
+          "about": "sofia",
+          "time": "22:30",
+          "where": "Copa",
+          "text": "Vi alguém entrar na copa rapidinho, por volta das 22:30."
+        }
+      ]
+    },
+    {
+      "id": "seguranca",
+      "name": "Elias Nunes",
+      "role": "Segurança do prédio",
+      "objetivo": "Garantir que ninguém saia do prédio sem passar pela portaria.",
+      "segredo": "Viu Nelson saindo da sala do editor sozinho, com pressa, por volta das 22:30, mas não achou estranho na hora.",
+      "relacoes": [
+        "Ivan — sempre cumprimentava na entrada",
+        "Nelson — cruza com ele quase todas as noites"
+      ],
+      "truth": {
+        "22:00": "Portaria",
+        "22:15": "Portaria",
+        "22:30": "Redação (rondando, quando vê Nelson saindo da sala do editor)",
+        "22:45": "Portaria",
+        "23:00": "Portaria"
+      },
+      "witnessClue": {
+        "about": "nelson",
+        "time": "22:30",
+        "where": "Sala do editor",
+        "text": "Vi alguém saindo da sala do editor sozinho, com pressa, por volta das 22:30."
+      },
+      "publicAlibi": "Portaria"
+    }
+  ],
+  "timelinePublicSeed": [
+    {
+      "time": "22:00",
+      "text": "Início do fechamento da edição da madrugada."
+    },
+    {
+      "time": "23:00",
+      "text": "O corpo de Ivan é encontrado pela estagiária, ao levar um café até a sala dele."
+    }
+  ],
+  "locations": [
+    {
+      "id": "sala-editor",
+      "name": "Sala do editor",
+      "evidence": [
+        {
+          "tag": "Física",
+          "text": "Uma cadeira derrubada e uma caneca quebrada perto da mesa."
+        },
+        {
+          "tag": "Documental",
+          "text": "Um e-mail impresso, endereçado a Nelson, com o assunto 'Plágio na coluna de terça — precisamos conversar'."
+        }
+      ]
+    },
+    {
+      "id": "redacao",
+      "name": "Redação",
+      "evidence": [
+        {
+          "tag": "Testemunhal",
+          "text": "Sofia confirma ter ouvido Ivan ao telefone dizendo que ia 'acabar com a carreira de alguém' mais cedo naquela noite."
+        }
+      ]
+    },
+    {
+      "id": "copa",
+      "name": "Copa",
+      "evidence": [
+        {
+          "tag": "Testemunhal",
+          "text": "A estagiária confirma ter ouvido um barulho alto vindo da sala do editor por volta das 22:45."
+        }
+      ]
+    },
+    {
+      "id": "portaria",
+      "name": "Portaria",
+      "evidence": [
+        {
+          "tag": "Documental",
+          "text": "A planilha de registro de saída não tem nenhum nome anotado depois das 22h."
+        }
+      ]
+    }
+  ],
+  "totalActions": 5,
+  "hints": [
+    {
+      "id": 1,
+      "unlockAfterActions": 0,
+      "text": "Comecem pela Sala do editor — foi lá que o corpo foi encontrado."
+    },
+    {
+      "id": 2,
+      "unlockAfterLocation": "sala-editor",
+      "text": "Aquele e-mail sobre plágio pode ser o motivo real por trás de tudo."
+    },
+    {
+      "id": 3,
+      "unlockOnContradiction": true,
+      "text": "Uma contradição foi registrada. Perguntem à testemunha exatamente o que ela viu, e onde."
+    }
+  ],
+  "whatFooledYou": [
+    "Bia estava só evitando uma tarefa chata, sem nenhuma relação com o crime.",
+    "Sofia ficou calada por achar que não era da sua conta, não porque soubesse de algo grave."
+  ]
+}

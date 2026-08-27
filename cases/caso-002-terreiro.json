@@ -1,0 +1,317 @@
+{
+  "id": "caso-002",
+  "title": "Sangue no Ilê Axé",
+  "difficulty": "Difícil",
+  "synopsis": "Um jornalista investigativo é encontrado morto nos fundos de um terreiro, numa cena forjada para parecer um ritual profanado.",
+  "estimatedMinutes": 65,
+  "victim": "Otávio Farias",
+  "intro": "Otávio Farias, jornalista de investigação, foi encontrado morto nos fundos do terreiro Ilê Axé Alafia às 23h45, durante uma cerimônia aberta ao público. A cena foi montada para parecer um ritual profanado — mas a resposta real está em dinheiro, não em fé.",
+  "minPlayers": 6,
+  "maxPlayers": 6,
+  "timeSlots": [
+    "22:45",
+    "23:10",
+    "23:20",
+    "23:25",
+    "23:45"
+  ],
+  "characters": [
+    {
+      "id": "marcelo",
+      "name": "Marcelo Vieira",
+      "role": "Empresário imobiliário",
+      "objetivo": "Descobrir quem matou Otávio antes que a suspeita sobre a compra do terreno volte a incomodar.",
+      "segredo": "Você sofria chantagem de Otávio, que descobriu o uso de laranjas para comprar o terreno do terreiro. Aproveitou o apagão para matá-lo e forjar a cena como um ritual profanado.",
+      "relacoes": [
+        "Otávio — sua vítima e chantagista",
+        "Mãe Janaína — usa a proximidade com ela como fachada de respeitabilidade"
+      ],
+      "truth": {
+        "22:45": "Portão lateral, discutindo com Otávio",
+        "23:10": "Galpão dos fundos (durante o apagão, comete o crime)",
+        "23:20": "Poço (limpando as mãos)",
+        "23:25": "Barracão (retornando, tentando parecer calmo)",
+        "23:45": "Barracão, com Janaína e os ogãs"
+      },
+      "isMurderer": true,
+      "motive": "Otávio ia expor o esquema de compra ilegal do terreno via laranjas e exigia R$ 2 milhões para ficar calado.",
+      "publicAlibi": "Portão lateral"
+    },
+    {
+      "id": "janaina",
+      "name": "Mãe Janaína",
+      "role": "Liderança religiosa do terreiro",
+      "objetivo": "Proteger o terreiro e a comunidade da suspeita injusta que recai sobre eles.",
+      "segredo": "Aceitou uma doação anônima em dinheiro vivo no dia anterior para reformar o telhado, e mentiu sobre a origem por medo de acharem que era suborno.",
+      "relacoes": [
+        "Marcelo — confiava nele como frequentador antigo da casa",
+        "Otávio — desconfiava das perguntas insistentes dele sobre o terreno"
+      ],
+      "truth": {
+        "22:45": "Salão principal (regendo os cantos)",
+        "23:10": "Salão principal (regendo os cantos, durante o apagão)",
+        "23:20": "Salão principal",
+        "23:25": "Salão principal",
+        "23:45": "Salão principal (é avisada do corpo)"
+      },
+      "publicAlibi": "Salão principal"
+    },
+    {
+      "id": "lucas",
+      "name": "Lucas Almeida",
+      "role": "Jornalista rival",
+      "objetivo": "Conseguir a matéria sobre a máfia dos terrenos antes de qualquer concorrente.",
+      "segredo": "Roubou o gravador de voz de Otávio antes da polícia chegar, para ficar com a matéria sobre a máfia dos terrenos.",
+      "relacoes": [
+        "Otávio — rival profissional",
+        "Helena — ofereceu ajuda a ela ao encontrar o corpo, sem saber explicar por quê estava ali perto"
+      ],
+      "truth": {
+        "22:45": "Salão principal (cobrindo a cerimônia)",
+        "23:10": "Salão principal (no banheiro, durante o apagão)",
+        "23:20": "Galpão dos fundos (se aproximando, ainda do lado de fora)",
+        "23:25": "Galpão dos fundos, pegando o gravador do corpo",
+        "23:45": "Salão principal"
+      },
+      "publicAlibi": "Salão principal"
+    },
+    {
+      "id": "diego",
+      "name": "Diego Martins",
+      "role": "Motorista de aplicativo",
+      "objetivo": "Cobrar uma dívida de Lucas sem chamar atenção para si.",
+      "segredo": "Atua como cobrador de dívidas e estava ali para pressionar Lucas, não a vítima.",
+      "relacoes": [
+        "Lucas — devedor que veio cobrar",
+        "Otávio — nunca trocou uma palavra com ele"
+      ],
+      "truth": {
+        "22:45": "Estacionamento, esperando uma corrida",
+        "23:10": "Estacionamento (carro desligado)",
+        "23:20": "Estacionamento",
+        "23:25": "Estacionamento",
+        "23:45": "Estacionamento"
+      },
+      "witnessClue": {
+        "about": "marcelo",
+        "time": "23:20",
+        "where": "Poço",
+        "text": "Vi um homem de terno perto do poço, limpando as mãos com um pano sujo, por volta das 23:20."
+      },
+      "publicAlibi": "Estacionamento"
+    },
+    {
+      "id": "andre",
+      "name": "André Rocha",
+      "role": "Fotógrafo contratado",
+      "objetivo": "Conseguir fotos exclusivas da cerimônia para vender à imprensa.",
+      "segredo": "Tirou fotos comprometedoras de Marcelo e Helena juntos na semana anterior e tentou vendê-las para a imprensa.",
+      "relacoes": [
+        "Marcelo — flagrou um encontro suspeito dele com Helena",
+        "Lucas — rivalidade profissional antiga"
+      ],
+      "truth": {
+        "22:45": "Salão principal (fotografando)",
+        "23:10": "Salão principal (trocando lentes, durante o apagão)",
+        "23:20": "Pátio (testando fotos com flash)",
+        "23:25": "Pátio (avista Lucas saindo do galpão dos fundos)",
+        "23:45": "Salão principal"
+      },
+      "publicAlibi": "Salão principal",
+      "witnessClues": [
+        {
+          "about": "lucas",
+          "time": "23:25",
+          "where": "Galpão dos fundos",
+          "text": "Vi alguém saindo correndo dos fundos, guardando algo no paletó, por volta das 23:25."
+        },
+        {
+          "about": "helena",
+          "time": "23:25",
+          "where": "Pátio",
+          "text": "Vi Helena atravessando o pátio, apressada, por volta das 23:25."
+        }
+      ]
+    },
+    {
+      "id": "helena",
+      "name": "Helena Duarte",
+      "role": "Irmã da vítima",
+      "objetivo": "Descobrir quem matou o irmão — e resolver a própria dívida sem levantar suspeitas.",
+      "segredo": "Tinha uma apólice de seguro de vida no nome de Otávio e devia R$ 300 mil a agiotas.",
+      "relacoes": [
+        "Otávio — irmão e segurado",
+        "André — foi fotografada ao lado de Marcelo por ele, sem saber"
+      ],
+      "truth": {
+        "22:45": "Salão principal (ao lado do irmão)",
+        "23:10": "Salão principal (apagão)",
+        "23:20": "Salão principal (procurando Otávio)",
+        "23:25": "Pátio (indo em direção aos fundos)",
+        "23:45": "Galpão dos fundos (encontra o corpo)"
+      },
+      "publicAlibi": "Salão principal"
+    }
+  ],
+  "timelinePublicSeed": [
+    {
+      "time": "22:00",
+      "text": "Convidados chegam para a cerimônia aberta ao público."
+    },
+    {
+      "time": "23:45",
+      "text": "O corpo de Otávio é encontrado por Helena, nos fundos do terreiro."
+    }
+  ],
+  "locations": [
+    {
+      "id": "galpao",
+      "name": "Galpão dos fundos",
+      "evidence": [
+        {
+          "tag": "Física",
+          "text": "Guias (colares rituais) cortadas e ervas espalhadas ao redor do corpo — a perícia preliminar não reconhece o padrão como parte de nenhum ritual real da casa."
+        },
+        {
+          "tag": "Física",
+          "text": "Uma garrafa quebrada no chão, ainda com cheiro forte — combina com o barulho ouvido por volta das 23:25."
+        },
+        {
+          "tag": "Documental",
+          "text": "Com a chave enferrujada, um baú de ferramentas do jardineiro se abre: dentro, um documento antigo de posse do terreno, com o nome de uma incorporadora.",
+          "requires": {
+            "locationId": "poco",
+            "evidenceIndex": 1
+          }
+        }
+      ],
+      "unlocksFacts": [
+        {
+          "time": "23:45",
+          "text": "A cena foi montada — os itens espalhados não correspondem a nenhuma prática real do terreiro."
+        }
+      ]
+    },
+    {
+      "id": "poco",
+      "name": "Poço",
+      "evidence": [
+        {
+          "tag": "Física",
+          "text": "Um pano sujo de graxa e lama, jogado às pressas atrás do muro do poço."
+        },
+        {
+          "tag": "Física",
+          "text": "Uma chave enferrujada escondida junto ao pano, presa por um barbante."
+        }
+      ]
+    },
+    {
+      "id": "portao-lateral",
+      "name": "Portão lateral",
+      "evidence": [
+        {
+          "tag": "Testemunhal",
+          "text": "Um segurança confirma ter visto Otávio e Marcelo discutindo ali por volta das 22:45, em tom baixo mas tenso."
+        }
+      ]
+    },
+    {
+      "id": "barracao",
+      "name": "Barracão",
+      "evidence": [
+        {
+          "tag": "Testemunhal",
+          "text": "Os ogãs confirmam que Janaína nunca saiu do salão principal — mas ninguém garante o mesmo sobre Marcelo durante o apagão."
+        }
+      ]
+    },
+    {
+      "id": "estacionamento",
+      "name": "Estacionamento",
+      "evidence": [
+        {
+          "tag": "Documental",
+          "text": "O aplicativo de corrida de Diego mostra o carro parado e desligado das 22:50 às 23:40."
+        },
+        {
+          "tag": "Testemunhal",
+          "text": "Um sedan preto com insulfilm foi visto saindo pela rua lateral por volta das 23:15 — ninguém no local reconhece o carro."
+        }
+      ]
+    },
+    {
+      "id": "escritorio-terreiro",
+      "name": "Escritório do terreiro",
+      "evidence": [
+        {
+          "tag": "Documental",
+          "text": "Anotações de Otávio mencionam 'laranjas', 'R$ 2 milhões' e o nome de uma incorporadora."
+        },
+        {
+          "tag": "Documental",
+          "text": "Um envelope com dinheiro vivo, sem identificação, escondido numa gaveta — ninguém assume a autoria."
+        }
+      ]
+    },
+    {
+      "id": "salao-principal",
+      "name": "Salão principal",
+      "evidence": [
+        {
+          "tag": "Testemunhal",
+          "text": "Vários presentes confirmam os cantos conduzidos por Janaína durante boa parte da noite."
+        }
+      ]
+    },
+    {
+      "id": "patio",
+      "name": "Pátio",
+      "evidence": [
+        {
+          "tag": "Física",
+          "text": "Marcas de tripé no chão, de onde várias fotos da noite foram tiradas."
+        }
+      ]
+    }
+  ],
+  "totalActions": 11,
+  "hints": [
+    {
+      "id": 1,
+      "unlockAfterActions": 0,
+      "text": "Comecem pelo Galpão dos fundos — a cena foi montada para parecer algo que não é. Reparem no que não bate."
+    },
+    {
+      "id": 2,
+      "unlockAfterLocation": "portao-lateral",
+      "text": "O que Otávio e Marcelo discutiam no portão às 22:45? Pode ser o motivo real por trás de tudo."
+    },
+    {
+      "id": 3,
+      "unlockAfterLocation": "escritorio-terreiro",
+      "text": "As anotações de Otávio mencionam dinheiro grande e uma incorporadora — sigam esse rastro."
+    },
+    {
+      "id": 4,
+      "unlockOnContradiction": true,
+      "text": "Uma contradição foi registrada. Perguntem à testemunha exatamente o que ela viu, e onde."
+    },
+    {
+      "id": 5,
+      "unlockAfterActions": 7,
+      "text": "O apagão, entre 23:10 e 23:18, é a janela em que quase ninguém tem álibi confirmado por outra pessoa. Quem não tem?"
+    },
+    {
+      "id": 6,
+      "unlockAfterLocation": "estacionamento",
+      "text": "Nem todo mundo que mente é o assassino — o sedan preto pode não ter nenhuma relação com o crime."
+    }
+  ],
+  "whatFooledYou": [
+    "A cena parecia um ritual profanado, mas era encenação de alguém de fora tentando culpar o terreiro.",
+    "Lucas mentiu sobre onde estava, mas o crime dele foi roubar o gravador, não matar Otávio.",
+    "Helena pareceu fria demais ao encontrar o corpo, mas já vivia às voltas com a própria dívida havia meses.",
+    "O sedan preto visto saindo às 23:15 nunca foi identificado — e não tinha nenhuma relação com o crime."
+  ]
+}

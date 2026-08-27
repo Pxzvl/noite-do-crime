@@ -1,0 +1,316 @@
+{
+  "id": "caso-001",
+  "title": "A Mansão",
+  "difficulty": "Médio",
+  "synopsis": "Um sócio, uma amante secreta e um herdeiro ambicioso — um jantar de família termina em morte.",
+  "estimatedMinutes": 50,
+  "victim": "Ricardo Ferraz",
+  "intro": "Ricardo Ferraz foi encontrado morto na biblioteca da própria casa, pouco depois das 22h53. Cinco pessoas estavam presentes naquela noite. Uma delas mente sobre onde estava.",
+  "minPlayers": 5,
+  "maxPlayers": 5,
+  "timeSlots": [
+    "22:15",
+    "22:30",
+    "22:40",
+    "22:47",
+    "22:50"
+  ],
+  "characters": [
+    {
+      "id": "helena",
+      "name": "Helena Duarte",
+      "role": "Sócia da vítima",
+      "objetivo": "Descobrir quem matou Ricardo antes que a dívida vire escândalo público.",
+      "segredo": "Você deve uma quantia alta a Ricardo e ele ameaçou expor isso ao conselho na semana que vem.",
+      "relacoes": [
+        "Bruno — desconfia de você",
+        "Otávio — colega de longa data"
+      ],
+      "truth": {
+        "22:15": "Escritório (discutindo com Ricardo)",
+        "22:30": "Jardim",
+        "22:40": "Jardim",
+        "22:47": "Corredor",
+        "22:50": "Sala principal"
+      },
+      "publicAlibi": "Jardim"
+    },
+    {
+      "id": "bruno",
+      "name": "Bruno Castro",
+      "role": "Sobrinho e herdeiro",
+      "objetivo": "Garantir que a herança não escape das suas mãos — e não ser descoberto.",
+      "segredo": "Você é o assassino. Descobriu que Ricardo ia te deserdar e cortou a energia para agir sem ser visto.",
+      "relacoes": [
+        "Helena — rival por influência",
+        "Lívia — não sabe que ela existe"
+      ],
+      "truth": {
+        "22:15": "Escritório (ouvindo a discussão escondido)",
+        "22:30": "Escritório (lendo a carta do testamento)",
+        "22:40": "Corredor (corta a energia)",
+        "22:47": "Biblioteca (comete o crime)",
+        "22:50": "Sala principal"
+      },
+      "isMurderer": true,
+      "motive": "Ricardo ia alterar o testamento e deserdá-lo.",
+      "publicAlibi": "Escritório",
+      "witnessClues": [
+        {
+          "about": "helena",
+          "time": "22:15",
+          "where": "Escritório",
+          "text": "Vi alguém de vestido claro discutindo asperamente com Ricardo no escritório, por volta das 22:15."
+        }
+      ]
+    },
+    {
+      "id": "livia",
+      "name": "Lívia Prado",
+      "role": "Amante secreta da vítima",
+      "objetivo": "Proteger seu segredo e entender o que houve com Ricardo.",
+      "segredo": "Você e Ricardo tinham um caso secreto. Você o esperava no quarto de hóspedes.",
+      "relacoes": [
+        "Ricardo — amante secreto",
+        "Otávio — sabe de vocês dois, mas nunca falou nada"
+      ],
+      "truth": {
+        "22:15": "Quarto de hóspedes",
+        "22:30": "Quarto de hóspedes",
+        "22:40": "Quarto de hóspedes",
+        "22:47": "Corredor (saiu para procurar Ricardo, viu Bruno saindo da biblioteca)",
+        "22:50": "Biblioteca (encontra o corpo)"
+      },
+      "witnessClue": {
+        "about": "bruno",
+        "time": "22:47",
+        "where": "Biblioteca",
+        "text": "Vi uma silhueta saindo apressada da biblioteca, ainda de paletó, por volta das 22:47."
+      },
+      "publicAlibi": "Quarto de hóspedes"
+    },
+    {
+      "id": "otavio",
+      "name": "Otávio Mendes",
+      "role": "Mordomo da mansão",
+      "objetivo": "Proteger a família Ferraz e entender o que aconteceu sob seu teto.",
+      "segredo": "Ao entrar na biblioteca mais cedo e ver a bagunça que Ricardo e Bruno deixaram após uma discussão, você arrumou os livros e limpou uma mancha no tapete — achando que estava só evitando um vexame na frente dos convidados, sem imaginar que aquilo viraria a cena de um crime horas depois.",
+      "relacoes": [
+        "Ricardo — servia há 20 anos",
+        "Bruno — o viu remexendo papéis"
+      ],
+      "truth": {
+        "22:15": "Cozinha",
+        "22:30": "Escritório (buscando taças, viu Bruno com a carta)",
+        "22:40": "Cozinha",
+        "22:47": "Cozinha",
+        "22:50": "Sala principal"
+      },
+      "witnessClue": {
+        "about": "bruno",
+        "time": "22:30",
+        "where": "Escritório",
+        "text": "Vi alguém alto mexendo em papéis no escritório por volta das 22:30, parecia tenso."
+      },
+      "publicAlibi": "Cozinha"
+    },
+    {
+      "id": "carla",
+      "name": "Carla Nogueira",
+      "role": "Jornalista",
+      "objetivo": "Conseguir provas de fraude financeira de Ricardo — e agora, entender sua morte.",
+      "segredo": "Você investiga Ricardo há meses por suspeita de fraude. Vasculhou a cozinha atrás de recibos.",
+      "relacoes": [
+        "Ricardo — alvo da sua investigação",
+        "Helena — possível fonte"
+      ],
+      "truth": {
+        "22:15": "Cozinha",
+        "22:30": "Cozinha",
+        "22:40": "Cozinha (ouviu um barulho vindo do corredor)",
+        "22:47": "Cozinha",
+        "22:50": "Sala principal"
+      },
+      "publicAlibi": "Cozinha"
+    }
+  ],
+  "timelinePublicSeed": [
+    {
+      "time": "22:00",
+      "text": "Todos chegam para o jantar."
+    },
+    {
+      "time": "22:53",
+      "text": "O corpo de Ricardo é encontrado na biblioteca."
+    }
+  ],
+  "locations": [
+    {
+      "id": "biblioteca",
+      "name": "Biblioteca",
+      "evidence": [
+        {
+          "tag": "Física",
+          "text": "Uma marca de luta recente perto da estante mais alta."
+        },
+        {
+          "tag": "Física",
+          "text": "Um botão de manga, do mesmo tecido do paletó de Bruno, caído junto à lareira."
+        },
+        {
+          "tag": "Física",
+          "text": "Uma mancha do tapete foi esfregada recentemente, de forma desajeitada — mais parece limpeza do que vestígio de crime."
+        }
+      ]
+    },
+    {
+      "id": "escritorio",
+      "name": "Escritório",
+      "evidence": [
+        {
+          "tag": "Documental",
+          "text": "O cofre está aberto. Dentro, uma cópia do testamento — rasurada na parte sobre a herança de Bruno."
+        },
+        {
+          "tag": "Testemunhal",
+          "text": "Otávio comenta ter visto alguém mexendo nos papéis mais cedo."
+        },
+        {
+          "tag": "Documental",
+          "text": "Com a chave pequena, uma gaveta trancada da escrivaninha se abre: cartas antigas de Ricardo, ameaçando cortar relações com mais de uma pessoa da família ao longo dos anos.",
+          "requires": { "locationId": "cozinha", "evidenceIndex": 1 }
+        }
+      ]
+    },
+    {
+      "id": "jardim",
+      "name": "Jardim",
+      "evidence": [
+        {
+          "tag": "Física",
+          "text": "Pegadas e um cigarro apagado — combinam com o hábito de Helena."
+        }
+      ]
+    },
+    {
+      "id": "cozinha",
+      "name": "Cozinha",
+      "evidence": [
+        {
+          "tag": "Física",
+          "text": "Falta uma faca no conjunto de facas — possivelmente a arma do crime."
+        },
+        {
+          "tag": "Física",
+          "text": "Uma pequena chave escondida atrás de uma lata de café, sem nenhuma etiqueta."
+        }
+      ]
+    },
+    {
+      "id": "quarto",
+      "name": "Quarto de hóspedes",
+      "evidence": [
+        {
+          "tag": "Física",
+          "text": "Um frasco de perfume feminino sobre a cômoda."
+        },
+        {
+          "tag": "Documental",
+          "text": "Um bilhete de Ricardo: 'Te encontro depois do jantar. — R.'"
+        }
+      ]
+    },
+    {
+      "id": "corredor",
+      "name": "Corredor",
+      "evidence": [
+        {
+          "tag": "Temporal",
+          "text": "O relógio de parede parou às 22:41 — provavelmente quando a energia caiu."
+        }
+      ],
+      "unlocksFacts": [
+        {
+          "time": "22:40",
+          "text": "A energia da mansão caiu (relógio parado às 22:41)."
+        }
+      ]
+    },
+    {
+      "id": "sala-principal",
+      "name": "Sala principal",
+      "evidence": [
+        {
+          "tag": "Testemunhal",
+          "text": "Taças de boas-vindas ainda na mesa — sinal de que o grupo se reencontrou ali depois do jantar."
+        }
+      ]
+    }
+  ],
+  "totalActions": 10,
+  "solutions": [
+    { "id": "a", "default": true, "murdererId": "bruno" },
+    {
+      "id": "b",
+      "murdererId": "helena",
+      "motive": "Ao ser confrontado sobre a dívida durante o apagão, Ricardo perdeu a cabeça e avançou contra Helena. Ela reagiu se defendendo — e o empurrão fez Ricardo bater a cabeça na estante.",
+      "characterOverrides": {
+        "helena": {
+          "segredo": "Você é a responsável pela morte de Ricardo — mas não do jeito que parece. Você deve uma quantia alta a ele, e ao confrontá-lo sobre isso durante o apagão, ele avançou contra você. Você o empurrou para se proteger, e ele bateu a cabeça na estante. Apavorada, você fugiu sem contar a ninguém.",
+          "truth": { "22:40": "Corredor (corta a energia)", "22:47": "Biblioteca (comete o crime)" }
+        },
+        "bruno": {
+          "segredo": "Mais cedo, você foi sozinho ao escritório tentar entender os termos do testamento antes que Ricardo o alterasse — mas não teve coragem de fazer nada além de ler os papéis às escondidas.",
+          "truth": { "22:40": "Escritório", "22:47": "Escritório" }
+        }
+      },
+      "witnessClues": {
+        "livia": [
+          { "about": "helena", "time": "22:47", "where": "Biblioteca", "text": "Vi uma silhueta saindo apressada da biblioteca, ainda de paletó, por volta das 22:47." }
+        ]
+      },
+      "whatFooledYou": [
+        "Bruno realmente leu o testamento escondido, mas não teve coragem de fazer mais do que isso.",
+        "Otávio viu Bruno com os papéis e presumiu o pior, mas Bruno nunca chegou perto de Ricardo.",
+        "Lívia escondia o próprio caso secreto, o que a fazia parecer suspeita mesmo sendo testemunha-chave."
+      ]
+    }
+  ],
+  "hints": [
+    {
+      "id": 1,
+      "unlockAfterActions": 0,
+      "text": "Comecem pela Biblioteca — foi lá que o corpo foi encontrado. Marcas no local podem indicar como tudo aconteceu."
+    },
+    {
+      "id": 2,
+      "unlockAfterLocation": "biblioteca",
+      "text": "O motivo pode estar escondido no Escritório. Vejam se falta algo no cofre da vítima."
+    },
+    {
+      "id": 3,
+      "unlockAfterLocation": "escritorio",
+      "text": "Como a mansão ficou às escuras por alguns minutos? O Corredor pode explicar isso."
+    },
+    {
+      "id": 4,
+      "unlockAfterLocation": "corredor",
+      "text": "Descubram quem não tem ninguém para confirmar onde estava durante a queda de energia (por volta das 22:40)."
+    },
+    {
+      "id": 5,
+      "unlockOnContradiction": true,
+      "text": "Uma contradição foi registrada na Linha do Tempo. Perguntem à testemunha exatamente o que ela viu — e quando."
+    },
+    {
+      "id": 6,
+      "unlockAfterActions": 6,
+      "text": "Ainda restam locais? O Quarto de hóspedes e a Cozinha podem confirmar ou derrubar os álibis que faltam."
+    }
+  ],
+  "whatFooledYou": [
+    "Helena tinha uma dívida e mentia sobre estar sozinha no jardim — mas nunca chegou perto da biblioteca.",
+    "Otávio limpou o tapete achando que evitava um vexame social, sem saber que apagaria um vestígio importante — mas não teve nenhuma participação no crime.",
+    "Lívia escondia o próprio caso secreto, o que a fazia parecer suspeita mesmo sendo testemunha-chave."
+  ]
+}
