@@ -1,0 +1,230 @@
+{
+  "id": "caso-004",
+  "title": "Suíte 402",
+  "difficulty": "Fácil",
+  "synopsis": "Um hóspede é encontrado morto na própria suíte. Poucas pessoas tinham acesso ao andar — e uma delas mente descaradamente.",
+  "estimatedMinutes": 35,
+  "victim": "Rogério Salles",
+  "intro": "Rogério Salles, hóspede frequente do Hotel Novo Horizonte, é encontrado morto na Suíte 402 pouco antes das 21h. Só quatro pessoas tinham acesso àquele andar naquela noite.",
+  "minPlayers": 4,
+  "maxPlayers": 4,
+  "timeSlots": [
+    "20:00",
+    "20:20",
+    "20:35",
+    "20:50",
+    "21:00"
+  ],
+  "characters": [
+    {
+      "id": "sonia",
+      "name": "Sônia Prado",
+      "role": "Camareira do andar",
+      "objetivo": "Não ser a primeira suspeita, já que foi a última a entrar no quarto antes da morte.",
+      "segredo": "Rogério te humilhou na frente de outros hóspedes semanas atrás, te acusando injustamente de roubo diante de todos. Quando ele descobriu os furtos de verdade e voltou a te ameaçar naquela noite, a raiva acumulada tomou conta e a discussão terminou em tragédia.",
+      "relacoes": [
+        "Rogério — ameaçava expor você",
+        "Wagner — desconfia de você há semanas"
+      ],
+      "truth": {
+        "20:00": "Corredor do 4º andar",
+        "20:20": "Suíte 402, arrumando toalhas",
+        "20:35": "Suíte 402, discutindo com Rogério",
+        "20:50": "Escada de serviço, descendo apressada",
+        "21:00": "Escada de serviço (descendo para a lavanderia)"
+      },
+      "isMurderer": true,
+      "motive": "Semanas atrás, Rogério a humilhou publicamente por uma acusação injusta. Quando ele voltou a confrontá-la sobre os furtos reais, a raiva acumulada explodiu numa briga que terminou com ele caído e ferido.",
+      "publicAlibi": "Corredor do 4º andar",
+      "plantAction": {
+        "locationId": "suite-402",
+        "targetName": "Suíte 402",
+        "evidence": {
+          "tag": "Documental",
+          "text": "Um bilhete dobrado embaixo da cama: 'Vejo você mais tarde. — B.' — a letra parece de Bento."
+        }
+      }
+    },
+    {
+      "id": "bento",
+      "name": "Bento Alves",
+      "role": "Recepcionista do turno da noite",
+      "objetivo": "Provar que cumpriu o protocolo de segurança do hotel corretamente.",
+      "segredo": "Você saiu da recepção para resolver um problema pessoal ao telefone — e nesse intervalo, desligou o sistema de câmeras do andar pra não aparecer no registro de ausência. Você já fez isso antes sem consequências. Só depois entendeu o que aqueles 15 minutos sem câmera podem parecer.",
+      "relacoes": [
+        "Rogério — hóspede antigo e exigente",
+        "Sônia — colega de trabalho havia anos"
+      ],
+      "truth": {
+        "20:00": "Recepção",
+        "20:20": "Recepção (do lado de fora, ao telefone)",
+        "20:35": "Recepção (do lado de fora, ao telefone)",
+        "20:50": "Recepção",
+        "21:00": "Recepção"
+      },
+      "publicAlibi": "Recepção"
+    },
+    {
+      "id": "wagner",
+      "name": "Wagner Dias",
+      "role": "Segurança do hotel",
+      "objetivo": "Descobrir o que houve antes que o hotel seja responsabilizado.",
+      "segredo": "Viu Sônia saindo apressada da escada de serviço por volta das 20:50, mas não contou nada na hora porque são amigos de longa data.",
+      "relacoes": [
+        "Sônia — amiga próxima, tentando protegê-la sem saber de tudo",
+        "Rogério — reclamava constantemente do serviço"
+      ],
+      "truth": {
+        "20:00": "Recepção",
+        "20:20": "Recepção (fazendo a ronda pelos andares)",
+        "20:35": "Corredor do 4º andar (em ronda)",
+        "20:50": "Escada de serviço, quando vê Sônia descendo",
+        "21:00": "Recepção"
+      },
+      "witnessClue": {
+        "about": "sonia",
+        "time": "20:50",
+        "where": "Escada de serviço",
+        "text": "Vi uma funcionária de uniforme descendo apressada pela escada de serviço, por volta das 20:50."
+      },
+      "publicAlibi": "Recepção"
+    },
+    {
+      "id": "iris",
+      "name": "Íris Mendes",
+      "role": "Hóspede do quarto vizinho",
+      "objetivo": "Provar que não teve nada a ver com o barulho que ouviu.",
+      "segredo": "Ouviu a discussão através da parede fina, mas não contou nada por medo de se envolver — está no hotel escondida do próprio marido.",
+      "relacoes": [
+        "Rogério — vizinho de quarto, nunca conversaram",
+        "Sônia — cruzou com ela no corredor mais cedo"
+      ],
+      "truth": {
+        "20:00": "Suíte 403",
+        "20:20": "Suíte 403",
+        "20:35": "Suíte 403, ouve vozes alteradas ao lado",
+        "20:50": "Suíte 403",
+        "21:00": "Suíte 403"
+      },
+      "publicAlibi": "Suíte 403"
+    }
+  ],
+  "timelinePublicSeed": [
+    {
+      "time": "20:00",
+      "text": "Início do turno da noite no 4º andar."
+    },
+    {
+      "time": "21:00",
+      "text": "O corpo de Rogério é encontrado por outro hóspede, ao passar pelo corredor."
+    }
+  ],
+  "locations": [
+    {
+      "id": "suite-402",
+      "name": "Suíte 402",
+      "evidence": [
+        {
+          "tag": "Física",
+          "text": "A cômoda está deslocada e há uma mancha no canto quina — compatível com uma queda."
+        },
+        {
+          "tag": "Documental",
+          "text": "Um bilhete de reclamação formal, escrito por Rogério, endereçado à gerência, sobre 'sumiço de pertences'."
+        },
+        {
+          "tag": "Física",
+          "text": "Com o registro do cartão que falta, dá pra confirmar: alguém usou um cartão extra pra entrar na Suíte 402 às 20:34.",
+          "requires": {
+            "locationId": "recepcao",
+            "evidenceIndex": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "escada-servico",
+      "name": "Escada de serviço",
+      "evidence": [
+        {
+          "tag": "Física",
+          "text": "Uma luva de limpeza caída no primeiro lance de escada."
+        }
+      ]
+    },
+    {
+      "id": "recepcao",
+      "name": "Recepção",
+      "evidence": [
+        {
+          "tag": "Documental",
+          "text": "O registro de ponto de Bento não bate exatamente com as imagens da câmera da entrada."
+        },
+        {
+          "tag": "Documental",
+          "text": "Um cartão de acesso extra do 4º andar está faltando no armário de controle."
+        }
+      ]
+    },
+    {
+      "id": "suite-403",
+      "name": "Suíte 403",
+      "evidence": [
+        {
+          "tag": "Testemunhal",
+          "text": "Íris relutantemente admite ter ouvido vozes alteradas vindas do quarto ao lado por volta das 20:35."
+        }
+      ]
+    },
+    {
+      "id": "corredor-4andar",
+      "name": "Corredor do 4º andar",
+      "evidence": [
+        {
+          "tag": "Física",
+          "text": "Um carrinho de limpeza abandonado no meio do corredor, com toalhas caídas ao lado."
+        }
+      ]
+    }
+  ],
+  "totalActions": 8,
+  "hints": [
+    {
+      "id": 1,
+      "unlockAfterActions": 0,
+      "text": "Comecem pela Suíte 402 — a cena ainda guarda sinais de como tudo aconteceu."
+    },
+    {
+      "id": 2,
+      "unlockAfterLocation": "suite-402",
+      "text": "O bilhete de reclamação de Rogério pode apontar um motivo — e um alvo."
+    },
+    {
+      "id": 3,
+      "unlockOnContradiction": true,
+      "text": "Uma contradição foi registrada. Perguntem à testemunha exatamente o que ela viu, e onde."
+    },
+    {
+      "id": 4,
+      "unlockAfterLocation": "escada-servico",
+      "text": "Quem usou a escada de serviço por volta das 20:50?"
+    }
+  ],
+  "whatFooledYou": [
+    "Bento desligou as câmeras para esconder sua própria saída — mas não tinha nada a ver com o crime de Sônia.",
+    "Wagner protegeu Sônia por amizade, sem imaginar que ela era responsável pela morte de Rogério.",
+    "A acusação injusta de semanas atrás nunca constou em nenhum registro — tornando o motivo de Sônia invisível até ela mesma precisar explicar."
+  ],
+  "confrontClues": [
+    {
+      "charIds": [
+        "sonia",
+        "wagner"
+      ],
+      "locationId": "escada-servico",
+      "clue": {
+        "text": "Wagner não aguenta olhar nos olhos de Sônia: 'Eu não contei porque... porque eu devia esse favor a você. Mas não sabia que era esse nível.'"
+      }
+    }
+  ]
+}

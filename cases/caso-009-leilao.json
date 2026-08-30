@@ -1,0 +1,245 @@
+{
+  "id": "caso-009",
+  "title": "Lance Fatal",
+  "difficulty": "Médio",
+  "synopsis": "Um colecionador renomado é encontrado morto durante um leilão particular de antiguidades. Uma peça falsificada pode ser o motivo.",
+  "estimatedMinutes": 50,
+  "victim": "Otelo Bragança",
+  "intro": "Otelo Bragança, colecionador e frequentador assíduo de leilões particulares, é encontrado morto na sala de curadoria da casa de leilões Bragança & Reis, pouco antes do lance final da noite.",
+  "minPlayers": 5,
+  "maxPlayers": 5,
+  "timeSlots": [
+    "20:30",
+    "20:50",
+    "21:10",
+    "21:30",
+    "21:50"
+  ],
+  "characters": [
+    {
+      "id": "eduardo",
+      "name": "Eduardo Reis",
+      "role": "Sócio da casa de leilões",
+      "objetivo": "Garantir que o leilão termine sem escândalos, e que a casa não perca a reputação.",
+      "segredo": "Você é o assassino. Otelo descobriu a falsificação há quase seis meses — e em vez de denunciar, passou a usar isso como extorsão silenciosa: ele ia a todos os seus leilões e exigia comissões absurdas para continuar calado. Hoje ele aumentou a exigência uma vez a mais, e você não aguentou.",
+      "relacoes": [
+        "Otelo — comprador da peça falsificada, ameaçava expô-lo",
+        "Marina — restauradora que percebeu algo estranho na peça"
+      ],
+      "truth": {
+        "20:30": "Sala de leilão (recebendo os convidados)",
+        "20:50": "Sala de curadoria, discutindo com Otelo",
+        "21:10": "Sala de curadoria, sozinho com Otelo",
+        "21:30": "Cofre, se recompondo",
+        "21:50": "Sala de leilão (junto aos outros convidados)"
+      },
+      "isMurderer": true,
+      "motive": "Otelo o extorquia silenciosamente há seis meses, usando a falsificação como alavanca. Quando o valor exigido dobrou naquela noite, Eduardo foi além do que planejava.",
+      "publicAlibi": "Sala de leilão",
+      "witnessClues": [
+        {
+          "about": "vitor",
+          "time": "21:10",
+          "where": "Sala de curadoria",
+          "text": "Vi alguém rondando perto da sala de curadoria, por volta das 21:10."
+        }
+      ],
+      "plantAction": {
+        "locationId": "jardim-inverno",
+        "targetName": "Jardim de inverno",
+        "evidence": {
+          "tag": "Documental",
+          "text": "Um recibo de compra com a assinatura de Hélio — pelo valor exato da peça em disputa. Parece que ele tinha interesse financeiro direto."
+        }
+      }
+    },
+    {
+      "id": "marina",
+      "name": "Marina Costa",
+      "role": "Restauradora da casa de leilões",
+      "objetivo": "Proteger o próprio nome profissional, já que autenticou a peça em questão.",
+      "segredo": "Percebeu, semanas atrás, que a peça vendida a Otelo tinha sinais de restauração recente demais para ser genuína, mas não teve coragem de contar a ninguém.",
+      "relacoes": [
+        "Eduardo — seu chefe direto",
+        "Otelo — comprador da peça que ela suspeitava ser falsa"
+      ],
+      "truth": {
+        "20:30": "Sala de curadoria, organizando os itens",
+        "20:50": "Sala de leilão",
+        "21:10": "Sala de leilão",
+        "21:30": "Sala de leilão",
+        "21:50": "Sala de leilão"
+      },
+      "publicAlibi": "Sala de leilão"
+    },
+    {
+      "id": "helio",
+      "name": "Hélio Marques",
+      "role": "Colecionador rival",
+      "objetivo": "Vencer o lance da noite, de qualquer forma necessária.",
+      "segredo": "Espalhou rumores sobre a autenticidade de peças da casa de leilões nas últimas semanas, numa tentativa de desvalorizar os lances e comprar mais barato.",
+      "relacoes": [
+        "Otelo — rival de longa data em leilões",
+        "Eduardo — desconfia dele desde os rumores"
+      ],
+      "truth": {
+        "20:30": "Jardim de inverno",
+        "20:50": "Jardim de inverno",
+        "21:10": "Sala de leilão",
+        "21:30": "Sala de leilão",
+        "21:50": "Sala de leilão"
+      },
+      "publicAlibi": "Sala de leilão"
+    },
+    {
+      "id": "vitor",
+      "name": "Vitor Almeida",
+      "role": "Segurança da casa de leilões",
+      "objetivo": "Garantir que nenhuma peça saia do prédio sem ser registrada.",
+      "segredo": "Viu Eduardo saindo da sala de curadoria sozinho, com pressa, por volta das 21:30, mas não contou nada por medo de perder o emprego.",
+      "relacoes": [
+        "Eduardo — seu chefe",
+        "Otelo — cliente frequente, sempre educado com ele"
+      ],
+      "truth": {
+        "20:30": "Recepção",
+        "20:50": "Recepção",
+        "21:10": "Sala de curadoria (em ronda pelo corredor)",
+        "21:30": "Sala de curadoria (em ronda, quando vê Eduardo saindo apressado)",
+        "21:50": "Recepção"
+      },
+      "witnessClue": {
+        "about": "eduardo",
+        "time": "21:30",
+        "where": "Cofre",
+        "text": "Vi alguém em direção ao cofre sozinho, com muita pressa, por volta das 21:30."
+      },
+      "publicAlibi": "Recepção"
+    },
+    {
+      "id": "clarice",
+      "name": "Clarice Bragança",
+      "role": "Sobrinha e herdeira de Otelo",
+      "objetivo": "Garantir que o leilão continue, já que parte da coleção da família seria vendida ali.",
+      "segredo": "Sabia que herdaria uma parte considerável da coleção de Otelo, incluindo peças que ele pretendia doar a um museu — e preferia vendê-las.",
+      "relacoes": [
+        "Otelo — tio",
+        "Eduardo — negociava a venda de parte da coleção com ele"
+      ],
+      "truth": {
+        "20:30": "Sala de leilão",
+        "20:50": "Sala de leilão",
+        "21:10": "Recepção",
+        "21:30": "Sala de leilão",
+        "21:50": "Sala de leilão"
+      },
+      "publicAlibi": "Sala de leilão"
+    }
+  ],
+  "timelinePublicSeed": [
+    {
+      "time": "20:30",
+      "text": "Início do leilão particular na casa Bragança & Reis."
+    },
+    {
+      "time": "21:50",
+      "text": "O corpo de Otelo é encontrado por um funcionário, na sala de curadoria."
+    }
+  ],
+  "locations": [
+    {
+      "id": "sala-curadoria",
+      "name": "Sala de curadoria",
+      "evidence": [
+        {
+          "tag": "Física",
+          "text": "Uma estante derrubada e uma peça de porcelana quebrada no chão."
+        },
+        {
+          "tag": "Documental",
+          "text": "Um laudo de autenticidade com uma data alterada à caneta, escondido numa gaveta."
+        }
+      ]
+    },
+    {
+      "id": "cofre",
+      "name": "Cofre",
+      "evidence": [
+        {
+          "tag": "Documental",
+          "text": "Um contrato de venda da peça em questão, com a assinatura de Eduardo."
+        }
+      ]
+    },
+    {
+      "id": "jardim-inverno",
+      "name": "Jardim de inverno",
+      "evidence": [
+        {
+          "tag": "Testemunhal",
+          "text": "Um garçom lembra de Hélio comentando, mais cedo, que 'algumas peças daquela casa não valiam nem metade do preço'."
+        }
+      ]
+    },
+    {
+      "id": "recepcao",
+      "name": "Recepção",
+      "evidence": [
+        {
+          "tag": "Testemunhal",
+          "text": "A recepcionista confirma que Clarice chegou a se afastar da sala de leilão por alguns minutos, sem dar explicações."
+        }
+      ]
+    },
+    {
+      "id": "sala-leilao",
+      "name": "Sala de leilão",
+      "evidence": [
+        {
+          "tag": "Documental",
+          "text": "O livro de lances mostra Otelo fazendo perguntas insistentes sobre a procedência de uma peça específica."
+        }
+      ]
+    }
+  ],
+  "totalActions": 9,
+  "hints": [
+    {
+      "id": 1,
+      "unlockAfterActions": 0,
+      "text": "Comecem pela Sala de curadoria — foi lá que o corpo foi encontrado."
+    },
+    {
+      "id": 2,
+      "unlockAfterLocation": "sala-curadoria",
+      "text": "Aquele laudo de autenticidade com a data alterada pode ser a chave do motivo."
+    },
+    {
+      "id": 3,
+      "unlockOnContradiction": true,
+      "text": "Uma contradição foi registrada. Perguntem à testemunha exatamente o que ela viu, e onde."
+    },
+    {
+      "id": 4,
+      "unlockAfterLocation": "cofre",
+      "text": "O contrato de venda no cofre liga alguém diretamente à peça em questão."
+    }
+  ],
+  "whatFooledYou": [
+    "Hélio espalhava rumores por interesse comercial — e o timing suspeito fez parecer que ele sabia da falsificação quando na verdade só chutava.",
+    "Clarice queria vender a coleção antes que fosse doada, e o nervosismo disso a fez parecer muito mais envolvida do que estava.",
+    "A extorsão nunca ficou registrada em lugar nenhum — Otelo era cuidadoso demais para isso."
+  ],
+  "confrontClues": [
+    {
+      "charIds": [
+        "helio",
+        "marina"
+      ],
+      "locationId": "sala-curadoria",
+      "clue": {
+        "text": "Marina finalmente cede: 'Eu sabia. Desde o laudo. Mas Eduardo me disse que seria só essa vez e que eu não seria responsabilizada.'"
+      }
+    }
+  ]
+}

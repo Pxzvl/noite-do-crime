@@ -1,0 +1,298 @@
+{
+  "id": "caso-006",
+  "title": "Águas Turvas",
+  "difficulty": "Difícil",
+  "synopsis": "Um investidor de tecnologia é encontrado morto durante uma festa particular em alto mar. O iate não chega a porto até o culpado ser encontrado.",
+  "estimatedMinutes": 65,
+  "victim": "Henrique Bastos",
+  "intro": "Henrique Bastos, investidor conhecido no mercado de tecnologia, é encontrado morto na popa do iate Estrela do Sul, durante uma festa privada em alto mar. Ninguém pode deixar a embarcação até a chegada da polícia — e ninguém, a bordo, está contando tudo o que sabe.",
+  "minPlayers": 6,
+  "maxPlayers": 6,
+  "timeSlots": [
+    "21:00",
+    "21:30",
+    "21:45",
+    "22:00",
+    "22:20"
+  ],
+  "characters": [
+    {
+      "id": "vinicius",
+      "name": "Vinícius Prado",
+      "role": "Sócio de startup investida por Henrique",
+      "objetivo": "Convencer todos de que está tão abalado quanto qualquer outro convidado.",
+      "segredo": "Henrique descobriu uma fraude contábil na sua startup e avisou, mais cedo naquela noite, que encerraria o investimento e denunciaria tudo já na segunda-feira.",
+      "relacoes": [
+        "Henrique — investidor, ameaçava denunciá-lo",
+        "Denise — sabia de parte do esquema contábil"
+      ],
+      "truth": {
+        "21:00": "Bar do convés",
+        "21:30": "Cabine principal, discutindo com Henrique",
+        "21:45": "Popa, sozinho com Henrique",
+        "22:00": "Sala de máquinas, se recompondo",
+        "22:20": "Convés superior, junto aos outros convidados"
+      },
+      "isMurderer": true,
+      "motive": "Henrique ia denunciar a fraude contábil da startup e encerrar o investimento na segunda-feira seguinte.",
+      "publicAlibi": "Bar do convés"
+    },
+    {
+      "id": "larissa",
+      "name": "Larissa Bastos",
+      "role": "Esposa de Henrique",
+      "objetivo": "Entender o que aconteceu com o marido antes que a imprensa chegue à própria versão da história.",
+      "segredo": "Estava prestes a pedir o divórcio e já havia consultado um advogado sobre a partilha dos bens da empresa.",
+      "relacoes": [
+        "Henrique — marido",
+        "Caio — trocou mensagens com ele na semana anterior sem o conhecimento de Henrique"
+      ],
+      "truth": {
+        "21:00": "Convés superior",
+        "21:30": "Convés superior, com outros convidados",
+        "21:45": "Cabine principal",
+        "22:00": "Convés superior",
+        "22:20": "Convés superior"
+      },
+      "publicAlibi": "Convés superior"
+    },
+    {
+      "id": "fabio",
+      "name": "Fábio Torres",
+      "role": "Capitão do iate",
+      "objetivo": "Provar que a embarcação estava em conformidade e que nada disso é responsabilidade sua.",
+      "segredo": "Deixou o comando por 20 minutos para resolver uma pane no motor, deixando a popa sem qualquer supervisão durante esse tempo.",
+      "relacoes": [
+        "Henrique — dono do iate",
+        "Beto — trabalham juntos há anos"
+      ],
+      "truth": {
+        "21:00": "Cabine de comando",
+        "21:30": "Sala de máquinas, resolvendo uma pane",
+        "21:45": "Sala de máquinas",
+        "22:00": "Cabine de comando",
+        "22:20": "Cabine de comando"
+      },
+      "publicAlibi": "Cabine de comando"
+    },
+    {
+      "id": "denise",
+      "name": "Denise Farias",
+      "role": "Assistente executiva de Henrique",
+      "objetivo": "Proteger o próprio emprego e reputação, independente do que descobrir.",
+      "segredo": "Ajudou a maquiar parte dos relatórios financeiros da startup de Vinícius a pedido dele, sem saber o tamanho real do problema.",
+      "relacoes": [
+        "Henrique — chefe",
+        "Vinícius — pediu ajuda com os relatórios havia meses"
+      ],
+      "truth": {
+        "21:00": "Cabine principal, organizando documentos",
+        "21:30": "Cabine principal",
+        "21:45": "Bar do convés",
+        "22:00": "Bar do convés",
+        "22:20": "Convés superior"
+      },
+      "witnessClue": {
+        "about": "vinicius",
+        "time": "21:45",
+        "where": "Popa",
+        "text": "Vi um homem sozinho com Henrique na popa por volta das 21:45, os dois em silêncio tenso."
+      },
+      "publicAlibi": "Cabine principal"
+    },
+    {
+      "id": "caio",
+      "name": "Caio Ramos",
+      "role": "Jornalista de tecnologia, convidado",
+      "objetivo": "Conseguir uma matéria exclusiva sobre os bastidores do mercado de startups.",
+      "segredo": "Foi convidado por Larissa, com quem trocava mensagens havia semanas, sem que Henrique soubesse do motivo real da aproximação.",
+      "relacoes": [
+        "Larissa — trocou mensagens com ela recentemente",
+        "Henrique — pretendia entrevistá-lo sobre o mercado"
+      ],
+      "truth": {
+        "21:00": "Convés superior",
+        "21:30": "Bar do convés",
+        "21:45": "Convés superior, observando o mar",
+        "22:00": "Popa, sozinho, fumando",
+        "22:20": "Convés superior"
+      },
+      "publicAlibi": "Convés superior",
+      "witnessClues": [
+        {
+          "about": "fabio",
+          "time": "21:30",
+          "where": "Sala de máquinas",
+          "text": "Vi o capitão descendo às pressas para a sala de máquinas por volta das 21:30, dizendo que era rápido."
+        },
+        {
+          "about": "denise",
+          "time": "22:20",
+          "where": "Convés superior",
+          "text": "Vi alguém no convés superior com os outros convidados, por volta das 22:20."
+        }
+      ]
+    },
+    {
+      "id": "beto",
+      "name": "Beto Alencar",
+      "role": "Chef de bordo",
+      "objetivo": "Terminar o serviço da noite sem que a festa vire uma cena de crime na cozinha.",
+      "segredo": "Notou que uma faca do conjunto de cozinha sumiu durante a noite, mas não contou nada por medo de ser o primeiro suspeito.",
+      "relacoes": [
+        "Henrique — contratante da festa",
+        "Fábio — trabalham juntos há anos"
+      ],
+      "truth": {
+        "21:00": "Cozinha",
+        "21:30": "Cozinha",
+        "21:45": "Cozinha",
+        "22:00": "Cozinha",
+        "22:20": "Cozinha, percebe a faca sumida"
+      },
+      "publicAlibi": "Cozinha"
+    }
+  ],
+  "timelinePublicSeed": [
+    {
+      "time": "21:00",
+      "text": "A festa privada começa a bordo do Estrela do Sul, ainda ancorado."
+    },
+    {
+      "time": "22:20",
+      "text": "O corpo de Henrique é encontrado na popa por um dos convidados."
+    }
+  ],
+  "locations": [
+    {
+      "id": "popa",
+      "name": "Popa",
+      "evidence": [
+        {
+          "tag": "Física",
+          "text": "Marcas de arrasto no piso de madeira, perto da amurada."
+        },
+        {
+          "tag": "Física",
+          "text": "Uma taça quebrada, com o mesmo drink que Henrique pediu mais cedo."
+        }
+      ]
+    },
+    {
+      "id": "cabine-principal",
+      "name": "Cabine principal",
+      "evidence": [
+        {
+          "tag": "Documental",
+          "text": "Uma pasta com relatórios financeiros da startup de Vinícius, com anotações de Henrique nas margens."
+        }
+      ]
+    },
+    {
+      "id": "cozinha",
+      "name": "Cozinha",
+      "evidence": [
+        {
+          "tag": "Física",
+          "text": "Falta uma faca no conjunto de facas do chef — ninguém sabe explicar o sumiço."
+        }
+      ]
+    },
+    {
+      "id": "sala-maquinas",
+      "name": "Sala de máquinas",
+      "evidence": [
+        {
+          "tag": "Testemunhal",
+          "text": "Um tripulante confirma que o capitão realmente esteve ali por cerca de 20 minutos resolvendo uma pane."
+        }
+      ]
+    },
+    {
+      "id": "bar-convés",
+      "name": "Bar do convés",
+      "evidence": [
+        {
+          "tag": "Testemunhal",
+          "text": "O barman lembra de Vinícius pedindo uma dose dupla, visivelmente tenso, pouco antes das 21:30."
+        }
+      ]
+    },
+    {
+      "id": "convés-superior",
+      "name": "Convés superior",
+      "evidence": [
+        {
+          "tag": "Digital",
+          "text": "Mensagens no celular de Larissa mostram uma conversa recente e frequente com Caio, sem relação aparente com o crime."
+        },
+        {
+          "tag": "Digital",
+          "text": "A câmera de segurança do convés superior tem uma gravação de 21:45 — um homem empurrando algo próximo da amurada. A resolução não identifica quem.",
+          "expiresAfterActions": 5
+        }
+      ]
+    },
+    {
+      "id": "cabine-comando",
+      "name": "Cabine de comando",
+      "evidence": [
+        {
+          "tag": "Documental",
+          "text": "O diário de bordo confirma um registro de pane no motor, resolvida em cerca de 20 minutos."
+        }
+      ]
+    }
+  ],
+  "totalActions": 13,
+  "hints": [
+    {
+      "id": 1,
+      "unlockAfterActions": 0,
+      "text": "Comecem pela Popa — foi lá que o corpo foi encontrado."
+    },
+    {
+      "id": 2,
+      "unlockAfterLocation": "cabine-principal",
+      "text": "Aqueles relatórios financeiros anotados por Henrique podem apontar um motivo direto."
+    },
+    {
+      "id": 3,
+      "unlockOnContradiction": true,
+      "text": "Uma contradição foi registrada. Perguntem à testemunha exatamente o que ela viu, e onde."
+    },
+    {
+      "id": 4,
+      "unlockAfterLocation": "sala-maquinas",
+      "text": "Os 20 minutos sem o capitão no comando deixaram a popa sem qualquer supervisão. Quem aproveitou essa janela?"
+    },
+    {
+      "id": 5,
+      "unlockAfterActions": 8,
+      "text": "Nem todo segredo é sobre o crime — algumas pessoas aqui só estão escondendo outra coisa."
+    },
+    {
+      "id": 6,
+      "unlockAfterLocation": "bar-convés",
+      "text": "Quem estava tenso demais no bar, pouco antes do horário do crime?"
+    }
+  ],
+  "whatFooledYou": [
+    "Larissa escondia um caso e planos de divórcio, sem nenhuma relação com a morte do marido.",
+    "Denise ajudou a maquiar relatórios sem saber o tamanho real da fraude — cúmplice sem querer, não assassina.",
+    "Caio só queria uma matéria exclusiva, e sua aproximação com Larissa não tinha nada a ver com o crime.",
+    "A faca sumida da cozinha nunca foi encontrada — e nunca foi a arma usada."
+  ],
+  "confrontClues": [
+    {
+      "charIds": [
+        "vinicius",
+        "larissa"
+      ],
+      "locationId": "cabine-principal",
+      "clue": {
+        "text": "Larissa olha pra Vinícius: 'Henrique me contou sobre você. Sobre o dinheiro.' Vinícius coça o pescoço: 'Ele não ia contar ninguém. A gente tinha um acordo.'"
+      }
+    }
+  ]
+}
